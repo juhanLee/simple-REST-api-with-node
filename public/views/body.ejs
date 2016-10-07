@@ -1,0 +1,70 @@
+
+<div class="container">
+  <h3>restful api 예제 사이트 입니다. with nodejs+express</h3>
+  <% if(username){ %>
+  <h4>Welcome! <%= username %> (name: <%= name %>)</h4>
+  <% }else{ %>
+  <h4>로그인이 되어있지 않습니다. 로그인 해주세요.</h4>
+
+  <% } %>
+<table class="table table-condensed">
+  <thead >
+    <tr class="active">
+
+
+    <th>분류</th>
+    <th>type</th>
+    <th>url</th>
+    <th>&nbsp;</th>
+    </tr>
+  </thead>
+
+    <tr >
+      <td>메인페이지</td>
+      <td>get</td>
+      <td>'/'</td>
+    </tr>
+    <tr>
+      <td>유저리스트 </td>
+      <td>get</td>
+      <td>/list</td>
+    </tr>
+    <tr>
+      <td>유저 한명 조회</td>
+      <td>get</td>
+      <td>/getUser/:username</td>
+    </tr>
+    <tr class="info">
+      <td>유저 추가</td>
+      <td>post</td>
+      <td>/addUser/:username</td>
+    </tr>
+    <tr>
+      <td>유저 수정</td>
+      <td>put</td>
+      <td>/updateUser/:username</td>
+    </tr>
+    <tr class="danger">
+      <td>정보 삭제</td>
+      <td>delete</td>
+      <td>/deletUser/:username</td>
+    </tr>
+    <tr>
+      <td>로그인</td>
+      <td>get</td>
+      <td>/login/username/password</td>
+    </tr>
+    <tr>
+      <td>로그아웃</td>
+      <td>get</td>
+      <td>/logout</td>
+    </tr>
+
+  <tfoot>
+    <tr>
+
+    </tr>
+  </tfoot>
+</table>
+
+</div>
